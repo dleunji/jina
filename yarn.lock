@@ -1098,7 +1098,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.12.5", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.10.3", "@babel/runtime@^7.12.5", "@babel/runtime@^7.9.2":
   version "7.14.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.0.tgz#46794bc20b612c5f75e62dd071e24dfd95f1cbe6"
   integrity sha512-JELkvo/DlpNdJ7dlyw/eY7E0suy5i5GQH+Vlxaq1nsNJ+H7f4Vtv3jMeCEgRhZZQFXTjldYfQgv2qmM6M1v5wA==
@@ -6576,6 +6576,13 @@ jest@26.6.0:
     import-local "^3.0.2"
     jest-cli "^26.6.0"
 
+jinabox@^0.1.48:
+  version "0.1.48"
+  resolved "https://registry.yarnpkg.com/jinabox/-/jinabox-0.1.48.tgz#6ef23f5780b7a0ef2a39fe259cddb305c5e1e029"
+  integrity sha512-pVXcJ7YLIZHt9SPhURAQPZ3gK76WxG31b4vqX18cq4K5ylY6g+Sq+CeWsstfS7DRXilfvTSqoyGxKEHIZN55Zw==
+  dependencies:
+    "@babel/runtime" "^7.10.3"
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -8973,6 +8980,11 @@ react-refresh@^0.8.3:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
+
+react-script-tag@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-script-tag/-/react-script-tag-1.1.2.tgz#be0fa3a22dfae8165d083f6bc1ff6f9799b20d44"
+  integrity sha512-4oR9ntvGfX4igiP77vK310ru5Oa77xO7CeYB3Xi9lu0qsikpGpK1Kq1WMFocvy8U4fQFq8ovtrZS/8adfCziFw==
 
 react-scripts@4.0.3:
   version "4.0.3"
