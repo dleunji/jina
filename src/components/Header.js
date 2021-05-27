@@ -4,27 +4,22 @@ import styled from "styled-components"
 const Header = (props) => {
     const {title, description, githubLink, ainizeLink} = props
     return (
-        <Inner>
+        <div>
             <Title>
                 <img src="/images/jina_search.svg" />
-                {title}
+                <h1>{title}</h1>
             </Title>
             <Description>{description}</Description>
             <Link>Github : <a href={githubLink} target="_blank">{title} <br /></a> </Link>
             <Link>Open API : <a href={ainizeLink} target="_blank">On Ainize</a></Link>
             <Line/>
-        </Inner>
+        </div>
     )
 }
 
-const Inner = styled.div`
-    align-items: center;
-    display: block;
-`
-
-const Title = styled.h1`
+const Title = styled.div`
     margin-bottom: 30px;
-    align-items: center;
+    display: flex;
 `
 
 const Description = styled.p`
