@@ -1,9 +1,10 @@
 import './App.css';
-import Jina from './components/Jina'
+import Jina from './components/SearchBox'
+import CrossModal from "./components/CrossModal"
 
 function App() {
   return (
-    <Jina server ="localhost:3000"></Jina>
+    <CrossModal></CrossModal>
   );
 }
 
