@@ -1,0 +1,35 @@
+
+$sidebar-bg-color: white !default;
+$submenu-bg-color: white !default;
+$submenu-bg-color-collapsed: white !default;
+$sidebar-color: white !default;
+$highlight-color: white;
+$icon-bg-color: white;
+$icon-size: 35px;
+
+@import '~react-pro-sidebar/dist/scss/styles.scss';
+body {
+  height: 100vh;
+}
+
+.layout {
+  height: 100%;
+  display: flex;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  height: 100%;
+
+}
+
+.description {
+  margin-top: 20px;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 14px;
+}
