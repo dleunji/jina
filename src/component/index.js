@@ -1,4 +1,3 @@
-
 import Sidebar from './Sidebar';
 import Example from './Example';
 import SearchBox from './SearchBox';

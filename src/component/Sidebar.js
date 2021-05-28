@@ -1,7 +1,6 @@
 import React from 'react';
-import {useDispatch} from 'react-redux';
 import {ProSidebar, Menu, MenuItem,SidebarHeader, SidebarContent} from 'react-pro-sidebar';
-import { FaTachometerAlt, FaGem, FaList, FaGithub, FaRegLaughWink, FaHeart } from 'react-icons/fa';
+import {FaTachometerAlt, FaGem, FaList, FaGithub, FaRegLaughWink, FaHeart } from 'react-icons/fa';
 
 const Sidebar = ({onChange}) => {
   const onClick = (id) => {

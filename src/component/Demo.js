@@ -22,7 +22,9 @@ const Demo = ({title, description, server,githubLink, ainizeLink}) => {
 }
 
 const Inner = styled.div`
-    margin: 0 auto;
+    margin-left: 5vw;
+    height: 100vh;
+    width: 100vw;
 `
 
 const Wrapper = styled.div`

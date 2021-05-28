@@ -1,13 +1,5 @@
 const infos = [
   {
-    id: 'Poke',
-    title: 'pokepoke',
-    description: '설명',
-    server : 'https://main-jina-pokemon-scy6500.endpoint.ainize.ai/api/search',
-    githubLink : 'github',
-    ainizeLink : 'ainize'
-  },
-  {
     id: 'CrossModal',
     title : 'Jina - Cross Modal Search System',
     description: 'This example allows the user to search for images given a caption description.',
@@ -16,8 +8,6 @@ const infos = [
     ainizeLink: 'https://ainize.ai/dleunji/crossmodal'
   }
 ];
-
-// export const change = (id) =>(dispatch({type: 'MODEL_CHANGE', id : id})); 
 
 const initialState = {
   info : infos[0]

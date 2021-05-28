@@ -3,12 +3,12 @@ import {useSelector} from 'react-redux';
 import {Demo} from '../component';
 
 const DemoContainer = () =>{
-  const {title, description, server, githubLink, ainizeLink, } = useSelector(({jina})=>({
+  const {title, description, server, githubLink, ainizeLink} = useSelector(({jina})=>({
     title : jina.info.title,
     description: jina.info.description,
     server: jina.info.server,
     githubLink: jina.info.githubLink,
-    ainizeLink: jina.info.ainizeLink,
+    ainizeLink: jina.info.ainizeLink
   }));
 
   return (

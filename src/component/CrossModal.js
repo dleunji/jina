@@ -3,7 +3,7 @@ import SearchBox from "./SearchBox"
 import Example from "./Example"
 import styled from "styled-components"
 
-const CrossModal = ({title, description,githubLink, ainizeLink, server}) => {
+const Demo = ({title, description,githubLink, ainizeLink, server}) => {
     return (
         <Inner>
                 <Header 
@@ -22,7 +22,7 @@ const CrossModal = ({title, description,githubLink, ainizeLink, server}) => {
 }
 
 const Inner = styled.div`
-    margin: 0 auto;
+    margin-left: 5vw;
 `
 
 const Wrapper = styled.div`
@@ -38,4 +38,4 @@ const Line = styled.div`
   margin-right: 20px;
 `;
 
-export default CrossModal;
+export default Demo;
