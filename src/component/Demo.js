@@ -3,7 +3,7 @@ import SearchBox from "./SearchBox"
 import Example from "./Example"
 import styled from "styled-components"
 
-const Demo = ({title, description,githubLink, ainizeLink, server}) => {
+const Demo = ({title, description, server,githubLink, ainizeLink}) => {
     return (
         <Inner>
                 <Header 

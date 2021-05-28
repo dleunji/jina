@@ -1,6 +1,5 @@
 import React from 'react';
 import ScriptTag from 'react-script-tag'
-import styled from 'styled-components';
 
 const SearchBox = ({server}) =>{
   const onLoad = () => {
@@ -11,7 +10,7 @@ const SearchBox = ({server}) =>{
     <div>
       <h2>Try it!</h2>
       <jina-searchbar></jina-searchbar>
-      <ScriptTag src ={server} onLoad = {onLoad}/>
+      <ScriptTag src ="https://unpkg.com/jinabox" onLoad = {onLoad}/>
     </div>
   );
 }
