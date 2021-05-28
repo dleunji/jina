@@ -15,17 +15,6 @@ body {
 .App {
   text-align: center;
   height: 100%;
-
-}
-a {
-  // text-decoration: none;
-  color:white;
-  border-bottom-color: white;
-  border-bottom-width: 2px;
-  // border-bottom-style: dotted;
-  :visited {
-    text-decoration: none;
-  }
 }
 
 .description {
@@ -33,7 +22,17 @@ a {
   text-align: center;
   font-family: Verdana;
   font-size: 14px;
+  a {
+    color:white;
+    border-bottom-color: white;
+    border-bottom-width: 2px;
+    // border-bottom-style: dotted;
+    :visited {
+      text-decoration: none;
+    }
+  }
 }
+
 .pro-sidebar {
   color: white !important;
 }
@@ -44,3 +43,22 @@ a {
 .pro-sidebar .pro-menu.shaped .pro-menu-item > .pro-inner-item > .pro-icon-wrapper {
   background-color: #429798 !important;
 }
+.pro-sidebar-content{
+  display: flex;
+  flex-direction:column;
+}
+.content-wrapper {
+  flex:1;
+}
+.footer {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.ainize-icon {
+  width: 100px;
+
+}
+// .github-icon {
+//   // width: 40px;
+// }

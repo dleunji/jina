@@ -1,27 +1,31 @@
 import Header from "./Header"
 import SearchBox from "./SearchBox"
-import styled from "styled-components"
 import Example from "./Example"
+import styled from "styled-components"
 
 const CrossModal = () => {
     return (
-        <div>
+        <Inner>
                 <Header 
                     title={"Jina - Cross Modal Search System"} 
                     description={"This example allows the user to search for images given a caption description."}
                     githubLink={"https://github.com/jina-ai/examples/tree/master/cross-modal-search"}
                     ainizeLink={"https://ainize.ai/dleunji/crossmodal"}    
                 ></Header>
-            <Inner>
+            <Wrapper>
                 <Example input={"a dog running in the meadow"} output={"CrossModelExample.png"}></Example>
                 <Line></Line>
                 <SearchBox server ="https://master-crossmodal-dleunji.endpoint.ainize.ai/api/search"></SearchBox>
-            </Inner>
-        </div>
+            </Wrapper>
+        </Inner>
     )
 }
 
 const Inner = styled.div`
+    margin: 0 auto;
+`
+
+const Wrapper = styled.div`
     display: flex;
 `
 
@@ -33,6 +37,5 @@ const Line = styled.div`
   margin-left: 30px;
   margin-right: 20px;
 `;
-
 
 export default CrossModal;
