@@ -1,4 +1,7 @@
-import Jina from './Jina';
-import Sidebar from './Sidebar';
 
-export {Jina, Sidebar};
+import Sidebar from './Sidebar';
+import Example from './Example';
+import SearchBox from './SearchBox';
+import CrossModal from './CrossModal';
+
+export {Sidebar, Example, SearchBox, CrossModal};
