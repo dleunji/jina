@@ -3,19 +3,19 @@ import SearchBox from "./SearchBox"
 import Example from "./Example"
 import styled from "styled-components"
 
-const CrossModal = () => {
+const CrossModal = ({title, description,githubLink, ainizeLink, server}) => {
     return (
         <Inner>
                 <Header 
-                    title={"Jina - Cross Modal Search System"} 
-                    description={"This example allows the user to search for images given a caption description."}
-                    githubLink={"https://github.com/jina-ai/examples/tree/master/cross-modal-search"}
-                    ainizeLink={"https://ainize.ai/dleunji/crossmodal"}    
+                    title={title} 
+                    description={description}
+                    githubLink={githubLink}
+                    ainizeLink={ainizeLink}    
                 ></Header>
             <Wrapper>
                 <Example input={"a dog running in the meadow"} output={"CrossModelExample.png"}></Example>
                 <Line></Line>
-                <SearchBox server ="https://master-crossmodal-dleunji.endpoint.ainize.ai/api/search"></SearchBox>
+                <SearchBox server ={server}></SearchBox>
             </Wrapper>
         </Inner>
     )

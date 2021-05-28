@@ -1,24 +1,43 @@
-const servers = {
-  'Poke': 'https://main-jina-pokemon-scy6500.endpoint.ainize.ai/api/search',
-  'CrossModal' : 'https://master-crossmodal-dleunji.endpoint.ainize.ai/api/search'
-}
+const infos = [
+  {
+    id: 'Poke',
+    title: 'poke',
+    description: '설명',
+    server : 'https://main-jina-pokemon-scy6500.endpoint.ainize.ai/api/search',
+    githubLink : 'github',
+    ainizeLink : 'ainize'
+  },
+  {
+    id: 'CrossModal',
+    title : 'Jina - Cross Modal Search System',
+    description: 'This example allows the user to search for images given a caption description.',
+    server : 'https://master-crossmodal-dleunji.endpoint.ainize.ai/api/search',
+    githubLink : 'https://github.com/jina-ai/examples/tree/master/cross-modal-search',
+    ainizeLink: 'https://ainize.ai/dleunji/crossmodal'
+  }
+];
 
 const initialState = {
   mode : 'Poke',
-  server : servers[this.mode]
+  info : {
+    id: 'CrossModal',
+    title : 'Jina - Cross Modal Search System',
+    description: 'This example allows the user to search for images given a caption description.',
+    server : 'https://master-crossmodal-dleunji.endpoint.ainize.ai/api/search',
+    githubLink : 'https://github.com/jina-ai/examples/tree/master/cross-modal-search',
+    ainizeLink: 'https://ainize.ai/dleunji/crossmodal'
+  }
 };
 
-export const mode = (state = initialState, action) => {
+export const jina = (state = initialState, action) => {
   switch (action.type) {
     case 'MODE_CHANGE':
       return {
         ...state,
-        mode : action.name,
-        server : servers[action.name]
+        mode : action.mode,
+        info : infos[action.id]
       };
     default:
-      return{
-        ...state
-      };
+      return state;
   };
 };

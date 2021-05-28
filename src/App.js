@@ -1,12 +1,12 @@
 import './App.scss';
-import {Sidebar, CrossModal}  from './components';
+import {Sidebar, Demo}  from './container';
 
 function App() {
   return (
     <div className="layout">
       <Sidebar/>
       {/* <Jina server ="https://master-crossmodal-dleunji.endpoint.ainize.ai/api/search"></Jina> */}
-      <CrossModal></CrossModal>
+      <Demo />
     </div>
   )
 }

@@ -1,4 +1,11 @@
+$sidebar-bg-color: #429798!default;
+$sidebar-color: #429798 !default;
+$icon-bg-color: #429798 !default;
 @import '~react-pro-sidebar/dist/scss/styles.scss';
+#root {
+  height: 100%;
+}
+
 body {
   height: 100vh;
 }
@@ -6,15 +13,6 @@ body {
 .layout {
   height: 100%;
   display: flex;
-}
-
-#root {
-  height: 100%;
-}
-
-.App {
-  text-align: center;
-  height: 100%;
 }
 
 .description {
@@ -26,7 +24,6 @@ body {
     color:white;
     border-bottom-color: white;
     border-bottom-width: 2px;
-    // border-bottom-style: dotted;
     :visited {
       text-decoration: none;
     }
@@ -36,12 +33,7 @@ body {
 .pro-sidebar {
   color: white !important;
   position: fixed !important;
-  .pro-menu.shaped .pro-menu-item > .pro-inner-item > .pro-icon-wrapper {
-    background-color: #429798 !important;
-  }
-  .pro-sidebar-inner {
-    background-color: #429798 !important;
-  }
+
   .pro-sidebar-header {
     border-bottom: 1px solid white !important;
   }

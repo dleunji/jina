@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
-
 const Header = (props) => {
+
     const {title, description, githubLink, ainizeLink} = props
     return (
         <div>

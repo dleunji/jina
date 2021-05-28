@@ -11,7 +11,7 @@ const SearchBox = ({server}) =>{
     <div>
       <h2>Try it!</h2>
       <jina-searchbar></jina-searchbar>
-      <ScriptTag src ='https://unpkg.com/jinabox' onLoad = {onLoad}/>
+      <ScriptTag src ={server} onLoad = {onLoad}/>
     </div>
   );
 }
