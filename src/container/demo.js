@@ -1,10 +1,18 @@
 import React, {useEffect} from 'react';
 import {useSelector, connect} from 'react-redux';
-import {CrossModal} from '../component';
+import {Demo} from '../component';
 
-const DemoContainer = ({title, description, server, githubLink, ainizeLink}) =>{
+const DemoContainer = () =>{
+  const {title, description, server, githubLink, ainizeLink} = useSelector(({jina})=>({
+    title : jina.info.title,
+    description: jina.info.description,
+    server: jina.info.server,
+    githubLink: jina.info.githubLink,
+    ainizeLink: jina.info.ainizeLink
+  }));
+
   return (
-    <CrossModal 
+    <Demo
     title={title} 
     description={description} 
     server={server}
@@ -14,13 +22,4 @@ const DemoContainer = ({title, description, server, githubLink, ainizeLink}) =>{
   );
 }
 
-export default connect(
-  ({jina})=>({
-    title : jina.info.title,
-    description: jina.info.description,
-    githubLink: jina.info.githubLink,
-    ainizeLink: jina.info.ainizeLink
-  }), {
-    //액션 생성
-  },
-)(DemoContainer);
+export default DemoContainer;

@@ -1,7 +1,7 @@
 const infos = [
   {
     id: 'Poke',
-    title: 'poke',
+    title: 'pokepoke',
     description: '설명',
     server : 'https://main-jina-pokemon-scy6500.endpoint.ainize.ai/api/search',
     githubLink : 'github',
@@ -17,16 +17,10 @@ const infos = [
   }
 ];
 
+// export const change = (id) =>(dispatch({type: 'MODEL_CHANGE', id : id})); 
+
 const initialState = {
-  mode : 'Poke',
-  info : {
-    id: 'CrossModal',
-    title : 'Jina - Cross Modal Search System',
-    description: 'This example allows the user to search for images given a caption description.',
-    server : 'https://master-crossmodal-dleunji.endpoint.ainize.ai/api/search',
-    githubLink : 'https://github.com/jina-ai/examples/tree/master/cross-modal-search',
-    ainizeLink: 'https://ainize.ai/dleunji/crossmodal'
-  }
+  info : infos[0]
 };
 
 export const jina = (state = initialState, action) => {
@@ -34,7 +28,6 @@ export const jina = (state = initialState, action) => {
     case 'MODE_CHANGE':
       return {
         ...state,
-        mode : action.mode,
         info : infos[action.id]
       };
     default:

@@ -3,7 +3,11 @@ import {useDispatch} from 'react-redux';
 import {ProSidebar, Menu, MenuItem,SidebarHeader, SidebarContent} from 'react-pro-sidebar';
 import { FaTachometerAlt, FaGem, FaList, FaGithub, FaRegLaughWink, FaHeart } from 'react-icons/fa';
 
-const Sidebar = () => {
+const Sidebar = ({onChange}) => {
+  const onClick = (id) => {
+    console.log(id);
+    onChange(id);
+  }
   
   return(
     <ProSidebar>
@@ -18,7 +22,7 @@ const Sidebar = () => {
       </SidebarHeader>
       <SidebarContent>
       <div className="content-wrapper">
-        <div className="description">
+        <div className="description" onClick={onClick}>
           AI search engine <a href="https://github.com/jina-ai/jina"><b>Jina</b></a> offers<br/>
           Large-scal indexing and querying of any kind of unstructured<br/>
           : video, image, long/short text, music, source code, PDF, etc.<br/>
@@ -31,8 +35,8 @@ const Sidebar = () => {
           letterSpacing: '1px',
           fontFamily: 'Verdana',
         }}>
-          <MenuItem icon={<FaGem />}>Poké</MenuItem>
-          <MenuItem icon={<FaGem />}>Cross Modal</MenuItem>
+          <div onClick={()=>onClick(0)}><MenuItem icon={<FaGem />}>Poké</MenuItem></div>
+          <div onClick={()=>onClick(1)}><MenuItem icon={<FaGem />}>Cross Modal</MenuItem></div>
         </Menu>
         </div>
         <div className="footer">

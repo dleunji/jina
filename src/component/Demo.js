@@ -1,0 +1,41 @@
+import Header from "./Header"
+import SearchBox from "./SearchBox"
+import Example from "./Example"
+import styled from "styled-components"
+
+const Demo = ({title, description,githubLink, ainizeLink, server}) => {
+    return (
+        <Inner>
+                <Header 
+                    title={title} 
+                    description={description}
+                    githubLink={githubLink}
+                    ainizeLink={ainizeLink}    
+                ></Header>
+            <Wrapper>
+                <Example input={"a dog running in the meadow"} output={"CrossModelExample.png"}></Example>
+                <Line></Line>
+                <SearchBox server ={server}></SearchBox>
+            </Wrapper>
+        </Inner>
+    )
+}
+
+const Inner = styled.div`
+    margin: 0 auto;
+`
+
+const Wrapper = styled.div`
+    display: flex;
+`
+
+const Line = styled.div`
+  border: 0.02px solid black; 
+  width: 0.1px; 
+  height: 600px;
+  opacity: 0.08;
+  margin-left: 30px;
+  margin-right: 20px;
+`;
+
+export default Demo;

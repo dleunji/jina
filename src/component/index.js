@@ -2,6 +2,6 @@
 import Sidebar from './Sidebar';
 import Example from './Example';
 import SearchBox from './SearchBox';
-import CrossModal from './CrossModal';
+import Demo from './Demo';
 
-export {Sidebar, Example, SearchBox, CrossModal};
+export {Sidebar, Example, SearchBox, Demo};
