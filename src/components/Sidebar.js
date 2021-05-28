@@ -16,6 +16,7 @@ const Sidebar = () => {
         Jina Demo
       </SidebarHeader>
       <SidebarContent>
+      <div className="content-wrapper">
         <div className="description">
           AI search engine <a href="https://github.com/jina-ai/jina"><b>Jina</b></a> offers<br/>
           Large-scal indexing and querying of any kind of unstructured<br/>
@@ -23,6 +24,7 @@ const Sidebar = () => {
           Try it out! <br/>
         </div>
         <Menu iconShape="square"
+        className="menu"
         style={{
           padding:'24px',
           letterSpacing: '1px',
@@ -31,23 +33,16 @@ const Sidebar = () => {
           <MenuItem icon={<FaGem />}>Poké</MenuItem>
           <MenuItem icon={<FaGem />}>Cross Modal</MenuItem>
         </Menu>
-        <div className="foooter">
-          <FaGithub/>
-          <div className="ainize"></div>
+        </div>
+        <div className="footer">
+          <FaGithub size={30}/>
+          <div>
+            <img src="/images/Group.svg" className="ainize-icon"></img>
+          </div>
         </div>
       </SidebarContent>
     </ProSidebar>
   );
 }
-
-const Footer = styled.div`
-  width : 20px;
-  height: auto;
-`
-
-const Ainize = styled.img`
-  src : "/images/Group.svg";
-`
-
 
 export default Sidebar;
