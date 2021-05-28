@@ -1,6 +1,7 @@
 import React from 'react';
 import {ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarContent} from 'react-pro-sidebar';
 import { FaTachometerAlt, FaGem, FaList, FaGithub, FaRegLaughWink, FaHeart } from 'react-icons/fa'
+import styled from "styled-components"
 import 'react-pro-sidebar/dist/css/styles.css';
 const Sidebar = () => {
   return(
@@ -30,9 +31,23 @@ const Sidebar = () => {
           <MenuItem icon={<FaGem />}>Poké</MenuItem>
           <MenuItem icon={<FaGem />}>Cross Modal</MenuItem>
         </Menu>
+        <div className="foooter">
+          <FaGithub/>
+          <div className="ainize"></div>
+        </div>
       </SidebarContent>
     </ProSidebar>
-
   );
 }
+
+const Footer = styled.div`
+  width : 20px;
+  height: auto;
+`
+
+const Ainize = styled.img`
+  src : "/images/Group.svg";
+`
+
+
 export default Sidebar;

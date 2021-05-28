@@ -17,22 +17,32 @@ body {
   height: 100%;
 
 }
-a {
-  // text-decoration: none;
-  color:white;
-  border-bottom-color: white;
-  border-bottom-width: 2px;
-  // border-bottom-style: dotted;
-  :visited {
-    text-decoration: none;
-  }
-}
+// a {
+//   // text-decoration: none;
+//   color:white;
+//   border-bottom-color: white;
+//   border-bottom-width: 2px;
+//   // border-bottom-style: dotted;
+//   :visited {
+//     text-decoration: none;
+//   }
+// }
 
 .description {
   margin-top: 20px;
   text-align: center;
   font-family: Verdana;
   font-size: 14px;
+  a {
+    // text-decoration: none;
+    color:white;
+    border-bottom-color: white;
+    border-bottom-width: 2px;
+    // border-bottom-style: dotted;
+    :visited {
+      text-decoration: none;
+    }
+  }
 }
 .pro-sidebar {
   color: white !important;
