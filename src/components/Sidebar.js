@@ -35,9 +35,9 @@ const Sidebar = () => {
         </Menu>
         </div>
         <div className="footer">
-          <FaGithub size={30}/>
+          <a href="https://github.com/dleunji/jina"><FaGithub size={25}/></a>
           <div>
-            <img src="/images/Group.svg" className="ainize-icon"></img>
+            <a href="#"><img src="/images/Group.svg" className="ainize-icon"></img></a>
           </div>
         </div>
       </SidebarContent>

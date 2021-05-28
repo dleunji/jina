@@ -4,7 +4,7 @@ import {Sidebar, CrossModal}  from './components';
 function App() {
   return (
     <div className="layout">
-      <Sidebar className="sidebar"/>
+      <Sidebar/>
       {/* <Jina server ="https://master-crossmodal-dleunji.endpoint.ainize.ai/api/search"></Jina> */}
       <CrossModal></CrossModal>
     </div>
