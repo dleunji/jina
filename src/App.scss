@@ -1,0 +1,46 @@
+@import '~react-pro-sidebar/dist/scss/styles.scss';
+body {
+  height: 100vh;
+}
+
+.layout {
+  height: 100%;
+  display: flex;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  height: 100%;
+
+}
+a {
+  // text-decoration: none;
+  color:white;
+  border-bottom-color: white;
+  border-bottom-width: 2px;
+  // border-bottom-style: dotted;
+  :visited {
+    text-decoration: none;
+  }
+}
+
+.description {
+  margin-top: 20px;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 14px;
+}
+.pro-sidebar {
+  color: white !important;
+}
+.pro-sidebar-inner {
+  background-color: #429798 !important;
+}
+
+.pro-sidebar .pro-menu.shaped .pro-menu-item > .pro-inner-item > .pro-icon-wrapper {
+  background-color: #429798 !important;
+}

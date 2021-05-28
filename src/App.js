@@ -1,10 +1,13 @@
-import './App.css';
-import Jina from './components/Jina'
+import './App.scss';
+import {Sidebar, CrossModal}  from './components';
 
 function App() {
   return (
-    <Jina server ="localhost:3000"></Jina>
-  );
+    <div className="layout">
+      <Sidebar/>
+      {/* <Jina server ="https://master-crossmodal-dleunji.endpoint.ainize.ai/api/search"></Jina> */}
+      <CrossModal></CrossModal>
+    </div>
+  )
 }
-
 export default App;
