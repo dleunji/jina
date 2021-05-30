@@ -1,20 +1,18 @@
+$sidebar-bg-color: #429798!default;
+$sidebar-color: #429798 !default;
+$icon-bg-color: #429798 !default;
 @import '~react-pro-sidebar/dist/scss/styles.scss';
+#root {
+  height: 100%;
+}
+
 body {
   height: 100vh;
 }
 
 .layout {
-  height: 100vh;
+  height: 100%;
   display: flex;
-}
-
-#root {
-  height: 100%;
-}
-
-.App {
-  text-align: center;
-  height: 100%;
 }
 
 .description {
@@ -26,7 +24,6 @@ body {
     color:white;
     border-bottom-color: white;
     border-bottom-width: 2px;
-    // border-bottom-style: dotted;
     :visited {
       text-decoration: none;
     }
@@ -35,18 +32,17 @@ body {
 
 .pro-sidebar {
   color: white !important;
-}
-.pro-sidebar-inner {
-  background-color: #429798 !important;
+  position: fixed !important;
+
+  .pro-sidebar-header {
+    border-bottom: 1px solid white !important;
+  }
+  .pro-sidebar-content{
+    display: flex;
+    flex-direction:column;
+  }
 }
 
-.pro-sidebar .pro-menu.shaped .pro-menu-item > .pro-inner-item > .pro-icon-wrapper {
-  background-color: #429798 !important;
-}
-.pro-sidebar-content{
-  display: flex;
-  flex-direction:column;
-}
 .content-wrapper {
   flex:1;
 }
@@ -54,11 +50,12 @@ body {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
-}
-.ainize-icon {
-  width: 100px;
 
+  a {
+    color:white;
+  }
+
+  .ainize-icon {
+    width: 90px;
+  }
 }
-// .github-icon {
-//   // width: 40px;
-// }
