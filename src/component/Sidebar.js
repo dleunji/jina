@@ -34,8 +34,8 @@ const Sidebar = ({onChange}) => {
           letterSpacing: '1px',
           fontFamily: 'Verdana',
         }}>
-          <div onClick={()=>onClick(0)}><MenuItem icon={<FaGem />}>Poké</MenuItem></div>
-          <div onClick={()=>onClick(1)}><MenuItem icon={<FaGem />}>Cross Modal</MenuItem></div>
+          <div onClick={()=>onClick(0)}><MenuItem icon={<FaGem />}>Cross Modal</MenuItem></div>
+          <div onClick={()=>onClick(1)}><MenuItem icon={<FaGem />}>Poké</MenuItem></div>
         </Menu>
         </div>
         <div className="footer">
