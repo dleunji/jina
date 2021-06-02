@@ -2,20 +2,23 @@ import styled from "styled-components"
 
 
 const Example = (props) => {
-    const {input, output} = props
-    const outputPath = "/images/" + output
+    const {inputType, input, output} = props
     return (
         <div>
             <h2>Example</h2>
             <h3>Input</h3>
-            <label>{input}</label>
+            {inputType === "text" ? (<div>{input}</div>) : <InputImg src={input}/>}
             <h3>Output</h3>
-            <ExampleImg src={outputPath} />
+            <OutputImg src={output} />
         </div>
     )
 }
 
-const ExampleImg = styled.img`
+const InputImg = styled.img`
+    height: 100px;
+`;
+
+const OutputImg = styled.img`
     height: 350px;
 `;
 

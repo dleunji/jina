@@ -1,6 +1,6 @@
 import React from 'react';
 import {ProSidebar, Menu, MenuItem,SidebarHeader, SidebarContent} from 'react-pro-sidebar';
-import { FaTachometerAlt, FaGem, FaList, FaGithub, FaRegLaughWink, FaHeart } from 'react-icons/fa';
+import {FaGem,FaGithub} from 'react-icons/fa';
 
 const Sidebar = ({onChange}) => {
   const onClick = (id) => {
@@ -35,7 +35,7 @@ const Sidebar = ({onChange}) => {
           fontFamily: 'Verdana',
         }}>
           <div onClick={()=>onClick(0)}><MenuItem icon={<FaGem />}>Cross Modal</MenuItem></div>
-          {/* <div onClick={()=>onClick(1)}><MenuItem icon={<FaGem />}>Poké</MenuItem></div> */}
+          <div onClick={()=>onClick(1)}><MenuItem icon={<FaGem />}>Poké</MenuItem></div>
         </Menu>
         </div>
         <div className="footer">

@@ -3,7 +3,7 @@ import SearchBox from "./SearchBox"
 import Example from "./Example"
 import styled from "styled-components"
 
-const Demo = ({title, description, server,githubLink, ainizeLink, inputType, input, output}) => {
+const Demo = ({title, description,githubLink, ainizeLink, server}) => {
     return (
         <Inner>
                 <Header 
@@ -13,7 +13,7 @@ const Demo = ({title, description, server,githubLink, ainizeLink, inputType, inp
                     ainizeLink={ainizeLink}    
                 ></Header>
             <Wrapper>
-                <Example inputType={inputType} input={input} output={output}></Example>
+                <Example input={"a dog running in the meadow"} output={"CrossModelExample.png"}></Example>
                 <Line></Line>
                 <SearchBox server ={server}></SearchBox>
             </Wrapper>
@@ -22,9 +22,7 @@ const Demo = ({title, description, server,githubLink, ainizeLink, inputType, inp
 }
 
 const Inner = styled.div`
-    margin-left: 300px;
-    width: 100%;
-    height: 100%;
+    margin-left: 5vw;
 `
 
 const Wrapper = styled.div`
