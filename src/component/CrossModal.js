@@ -3,7 +3,7 @@ import SearchBox from "./SearchBox"
 import Example from "./Example"
 import styled from "styled-components"
 
-const Demo = ({title, description, server,githubLink, ainizeLink}) => {
+const Demo = ({title, description,githubLink, ainizeLink, server}) => {
     return (
         <Inner>
                 <Header 
@@ -22,9 +22,7 @@ const Demo = ({title, description, server,githubLink, ainizeLink}) => {
 }
 
 const Inner = styled.div`
-    margin-left: 300px;
-    width: 100%;
-    height: 100%;
+    margin-left: 5vw;
 `
 
 const Wrapper = styled.div`

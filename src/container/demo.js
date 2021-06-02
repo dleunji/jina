@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react';
-import {useSelector, connect} from 'react-redux';
+import React from 'react';
+import {useSelector} from 'react-redux';
 import {Demo} from '../component';
 
 const DemoContainer = () =>{
