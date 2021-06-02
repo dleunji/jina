@@ -23,7 +23,7 @@ const Sidebar = ({onChange}) => {
       <div className="content-wrapper">
         <div className="description" onClick={onClick}>
           AI search engine <a href="https://github.com/jina-ai/jina"><b>Jina</b></a> offers<br/>
-          Large-scal indexing and querying of any kind of unstructured<br/>
+          Large-scale indexing and querying of any kind of unstructured<br/>
           : video, image, long/short text, music, source code, PDF, etc.<br/>
           Try it out! <br/>
         </div>
@@ -41,7 +41,7 @@ const Sidebar = ({onChange}) => {
         <div className="footer">
           <a href="https://github.com/dleunji/jina"><FaGithub size={25}/></a>
           <div>
-            <a href="#"><img src="/images/Group.svg" className="ainize-icon"></img></a>
+            <a href="https://master-jina-dleunji.endpoint.ainize.ai/"><img src="/images/Group.svg" className="ainize-icon"></img></a>
           </div>
         </div>
       </SidebarContent>
