@@ -3,7 +3,7 @@ import SearchBox from "./SearchBox"
 import Example from "./Example"
 import styled from "styled-components"
 
-const Demo = ({title, description, server,githubLink, ainizeLink}) => {
+const Demo = ({title, description, server,githubLink, ainizeLink, inputType, input, output}) => {
     return (
         <Inner>
                 <Header 
@@ -13,7 +13,7 @@ const Demo = ({title, description, server,githubLink, ainizeLink}) => {
                     ainizeLink={ainizeLink}    
                 ></Header>
             <Wrapper>
-                <Example input={"a dog running in the meadow"} output={"CrossModelExample.png"}></Example>
+                <Example inputType={inputType} input={input} output={output}></Example>
                 <Line></Line>
                 <SearchBox server ={server}></SearchBox>
             </Wrapper>
