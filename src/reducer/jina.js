@@ -1,5 +1,13 @@
 const infos = [
   {
+    id: 'Poke',
+    title: 'poke',
+    description: '설명',
+    server : 'https://main-jina-pokemon-scy6500.endpoint.ainize.ai/api/search',
+    githubLink : 'github',
+    ainizeLink : 'ainize'
+  },
+  {
     id: 'CrossModal',
     title : 'Jina - Cross Modal Search System',
     description: 'This example allows the user to search for images given a caption description.',
