@@ -22,8 +22,8 @@ const infos = [
     output: "/images/PokeExample.png",
   },
   {
-    id: 'Object Detection',
-    title: 'Jina - Object Detection',
+    id: 'Object Search',
+    title: 'Jina - Object Search',
     description: 'It allows the user to find the most relevant parent photo.',
     server: 'https://master-object-search-dleunji.endpoint.ainize.ai/api/search',
     githubLink : 'https://github.com/jina-ai/examples/tree/master/object-search',
