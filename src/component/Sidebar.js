@@ -21,7 +21,7 @@ const Sidebar = ({onChange}) => {
       </SidebarHeader>
       <SidebarContent>
       <div className="content-wrapper">
-        <div className="description" onClick={onClick}>
+        <div className="description">
           AI search engine <a href="https://github.com/jina-ai/jina"><b>Jina</b></a> offers<br/>
           Large-scale indexing and querying of any kind of unstructured<br/>
           : video, image, long/short text, music, source code, PDF, etc.<br/>
@@ -34,15 +34,15 @@ const Sidebar = ({onChange}) => {
           letterSpacing: '1px',
           fontFamily: 'Verdana',
         }}>
-          <div onClick={()=>onClick(0)}><MenuItem icon={<FaGem />}>Poké</MenuItem></div>
-          <div onClick={()=>onClick(1)}><MenuItem icon={<FaGem />}>Cross Modal</MenuItem></div>
+          <div onClick={()=>onClick(0)}><MenuItem icon={<FaGem />}>Cross Modal</MenuItem></div>
+          <div onClick={()=>onClick(1)}><MenuItem icon={<FaGem />}>Poké</MenuItem></div>
           <div onClick={()=>onClick(2)}><MenuItem icon={<FaGem />}>Object Search</MenuItem></div>
         </Menu>
         </div>
         <div className="footer">
           <a href="https://github.com/dleunji/jina"><FaGithub size={25}/></a>
           <div>
-            <a href="https://master-jina-dleunji.endpoint.ainize.ai/"><img src="/images/Group.svg" className="ainize-icon"></img></a>
+            <a href="https://ainize.ai/dleunji/jina"><img src="/images/Group.svg" className="ainize-icon"></img></a>
           </div>
         </div>
       </SidebarContent>

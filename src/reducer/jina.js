@@ -5,16 +5,6 @@ const infos = [
     description: 'It allows the user to search for images given a caption description.',
     server : 'https://master-crossmodal-dleunji.endpoint.ainize.ai/api/search',
     githubLink : 'https://github.com/jina-ai/examples/tree/master/cross-modal-search',
-<<<<<<< HEAD
-    ainizeLink: 'https://ainize.ai/dleunji/crossmodal'
-  },
-  {
-    id: 'Object Detection',
-    title: 'Jina - Object Detection',
-    description: 'It allows the user to find the most relevant parent photo.',
-    server: 'https://master-object-search-dleunji.endpoint.ainize.ai/api/search',
-    ainizeLink: 'https://ainize.ai/dleunji/object-search?branch=master'
-=======
     ainizeLink: 'https://ainize.ai/dleunji/crossmodal',
     inputType: "text",
     input: "a dog running in the meadow",
@@ -30,8 +20,19 @@ const infos = [
     inputType: "image",
     input: "/images/PokeInput.jpeg",
     output: "/images/PokeExample.png",
->>>>>>> 3255437632ff0a108e104adcc7dd4849949a63b7
-  }
+  },
+  {
+    id: 'Object Detection',
+    title: 'Jina - Object Detection',
+    description: 'It allows the user to find the most relevant parent photo.',
+    server: 'https://master-object-search-dleunji.endpoint.ainize.ai/api/search',
+    githubLink : 'https://github.com/jina-ai/examples/tree/master/object-search',
+    ainizeLink: 'https://ainize.ai/dleunji/object-search?branch=master',
+    inputType: "image",
+    input: "/images/PokeInput.jpeg",
+    output: "/images/PokeExample.png",
+
+  },
 ];
 
 const initialState = {
