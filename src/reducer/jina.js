@@ -10,10 +10,17 @@ const infos = [
   {
     id: 'CrossModal',
     title : 'Jina - Cross Modal Search System',
-    description: 'This example allows the user to search for images given a caption description.',
+    description: 'It allows the user to search for images given a caption description.',
     server : 'https://master-crossmodal-dleunji.endpoint.ainize.ai/api/search',
     githubLink : 'https://github.com/jina-ai/examples/tree/master/cross-modal-search',
     ainizeLink: 'https://ainize.ai/dleunji/crossmodal'
+  },
+  {
+    id: 'Object Detection',
+    title: 'Jina - Object Detection',
+    description: 'It allows the user to find the most relevant parent photo.',
+    server: 'https://master-object-search-dleunji.endpoint.ainize.ai/api/search',
+    ainizeLink: 'https://ainize.ai/dleunji/object-search?branch=master'
   }
 ];
 
