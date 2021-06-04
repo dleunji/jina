@@ -29,8 +29,8 @@ const infos = [
     githubLink : 'https://github.com/jina-ai/examples/tree/master/object-search',
     ainizeLink: 'https://ainize.ai/dleunji/object-search?branch=master',
     inputType: "image",
-    input: "/images/PokeInput.jpeg",
-    output: "/images/PokeExample.png",
+    input: "/images/ObjectInput.png",
+    output: "/images/ObjectExample.png",
 
   },
 ];
