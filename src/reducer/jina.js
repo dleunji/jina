@@ -33,6 +33,17 @@ const infos = [
     output: "/images/ObjectExample.png",
 
   },
+  {
+    id: 'Gif Search',
+    title: 'Jina - Gif Search',
+    description: 'If you upload a gif file, it will find a similar gif file.',
+    server: 'https://main-jina-gif-search-scy6500.endpoint.ainize.ai/api/search',
+    githubLink : 'https://github.com/jina-ai/examples/tree/master/tumblr-gif-search',
+    ainizeLink: 'https://ainize.ai/scy6500/jina-gif-search?branch=main',
+    inputType: "image",
+    input: "/images/GifInput.png",
+    output: "/images/GifOutput.png",
+  },
 ];
 
 const initialState = {
