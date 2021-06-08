@@ -9,7 +9,7 @@ const SearchBox = ({server}) =>{
     jb.init(server,{ timeout:25000, top_k:16});
   }
   return(
-    <div>
+    <div className="searchbox-wrapper">
       <h2>Try it!</h2>
       <jina-searchbar></jina-searchbar>
       <CustomScriptTag src ="https://unpkg.com/jinabox" onLoad = {onLoad}/>

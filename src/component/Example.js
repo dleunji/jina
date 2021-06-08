@@ -4,7 +4,7 @@ import styled from "styled-components"
 const Example = (props) => {
     const {inputType, input, output} = props
     return (
-        <div>
+        <div className="example-wrapper">
             <h2>Example</h2>
             <h3>Input</h3>
             {inputType === "text" ? (<div>{input}</div>) : <InputImg src={input}/>}

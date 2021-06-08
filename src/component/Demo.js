@@ -21,18 +21,14 @@ const Demo = ({title, description, server,githubLink, ainizeLink, inputType, inp
     )
 }
 const Inner = styled.div`
-    padding-left: 300px;
+    margin-left: 400px;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 `
 
 const Wrapper = styled.div`
     display: flex;
-    width:100%;
-    justify-content: space-evenly;
+    width: 100%;
 `
 
 const Line = styled.div`

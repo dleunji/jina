@@ -3,14 +3,16 @@ import styled from "styled-components"
 const Header = (props) => {
     const {title, description, githubLink, ainizeLink} = props
     return (
-        <div className="header-container">
-            <Title>
-                <img src="/images/jina_search.svg" />
-                <h1>{title}</h1>
-            </Title>
-            <Description>{description}</Description>
-            <Link>Github : <a href={githubLink} target="_blank">{title} <br /></a> </Link>
-            <Link>Open API : <a href={ainizeLink} target="_blank">On Ainize</a></Link>
+        <div className="header-wrapper">
+            <div className="header-container">
+                <Title>
+                    <img src="/images/jina_search.svg" />
+                    <h1>{title}</h1>
+                </Title>
+                <Description>{description}</Description>
+                <Link>Github : <a href={githubLink} target="_blank">{title} <br /></a> </Link>
+                <Link>Open API : <a href={ainizeLink} target="_blank">On Ainize</a></Link>
+            </div>
             <Line/>
         </div>
     )
