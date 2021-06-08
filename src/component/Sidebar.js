@@ -4,7 +4,6 @@ import {FaGem,FaGithub} from 'react-icons/fa';
 
 const Sidebar = ({onChange}) => {
   const onClick = (id) => {
-    console.log(id);
     onChange(id);
   }
   

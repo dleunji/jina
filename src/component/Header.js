@@ -1,10 +1,9 @@
 import styled from "styled-components"
 
 const Header = (props) => {
-
     const {title, description, githubLink, ainizeLink} = props
     return (
-        <div>
+        <div className="header-container">
             <Title>
                 <img src="/images/jina_search.svg" />
                 <h1>{title}</h1>
@@ -24,13 +23,13 @@ const Title = styled.div`
 
 const Description = styled.p`
     margin-bottom: 30px;
+    justify-content: center;
 `
 
 const Link = styled.div`
     margin-top: 5px;
 `
 const Line = styled.hr`
-  margin: 20px 40px;
   opacity: 0.2;
 `;
 
