@@ -37,6 +37,7 @@ const Sidebar = ({onChange}) => {
           <div onClick={()=>onClick(0)}><MenuItem icon={<FaGem />}>Cross Modal</MenuItem></div>
           <div onClick={()=>onClick(1)}><MenuItem icon={<FaGem />}>Poké</MenuItem></div>
           <div onClick={()=>onClick(2)}><MenuItem icon={<FaGem />}>Object Search</MenuItem></div>
+          <div onClick={()=>onClick(3)}><MenuItem icon={<FaGem />}>Gif Search</MenuItem></div>
         </Menu>
         </div>
         <div className="footer">
