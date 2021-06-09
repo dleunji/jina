@@ -6,12 +6,12 @@ import styled from "styled-components"
 const Demo = ({title, description, server,githubLink, ainizeLink, inputType, input, output}) => {
     return (
         <Inner>
-            <Header 
-                title={title} 
-                description={description}
-                githubLink={githubLink}
-                ainizeLink={ainizeLink}    
-            ></Header>
+                <Header 
+                    title={title} 
+                    description={description}
+                    githubLink={githubLink}
+                    ainizeLink={ainizeLink}    
+                ></Header>
             <Wrapper>
                 <Example inputType={inputType} input={input} output={output}></Example>
                 <Line></Line>
@@ -20,15 +20,15 @@ const Demo = ({title, description, server,githubLink, ainizeLink, inputType, inp
         </Inner>
     )
 }
+
 const Inner = styled.div`
-    margin-left: 400px;
+    margin-left: 330px;
     width: 100%;
     height: 100%;
 `
 
 const Wrapper = styled.div`
     display: flex;
-    width: 100%;
 `
 
 const Line = styled.div`
@@ -36,6 +36,8 @@ const Line = styled.div`
   width: 0.1px; 
   height: 600px;
   opacity: 0.08;
+  margin-left: 30px;
+  margin-right: 20px;
 `;
 
 export default Demo;

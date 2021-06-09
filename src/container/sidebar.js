@@ -1,5 +1,5 @@
 import {Sidebar} from '../component';
-import {useDispatch} from 'react-redux';
+import {useSelector, useDispatch} from 'react-redux';
 
 const SidebarContainer = () => {
   const dispatch = useDispatch();
