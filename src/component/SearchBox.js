@@ -5,14 +5,14 @@ import CustomScriptTag from './CustomScriptTag';
 const SearchBox = ({server}) =>{
   const onLoad = () => {
     console.log(server);
-    const jb = window.JinaBox;
-    jb.init(server,{ timeout:25000, top_k:16});
+    var jb = window.JinaBox;
+    jb.init(server);
   }
   return(
     <div>
       <h2>Try it!</h2>
       <jina-searchbar></jina-searchbar>
-      <CustomScriptTag src ="https://unpkg.com/jinabox" onLoad = {onLoad}/>
+      <CustomScriptTag src ="https://unpkg.com/jinabox@0.1.49/dist/jinabox.umd.min.js" onLoad = {onLoad}/>
     </div>
   );
 }
