@@ -33,7 +33,7 @@ body {
 .pro-sidebar {
   color: white !important;
   position: fixed !important;
-  width: 330px;
+
   .pro-sidebar-header {
     border-bottom: 1px solid white !important;
   }
@@ -49,6 +49,7 @@ body {
 .footer {
   margin-bottom: 20px;
   display: flex;
+  justify-content: space-around;
 
   a {
     color:white;
@@ -57,11 +58,4 @@ body {
   .ainize-icon {
     width: 90px;
   }
-}
-
-.example-wrapper{
-  margin-right:30px;
-}
-.searchbox-wrapper{
-  margin-left:30px;
 }
