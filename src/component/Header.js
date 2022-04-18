@@ -10,7 +10,6 @@ const Header = (props) => {
                 <h1>{title}</h1>
             </Title>
             <Description>{description}</Description>
-            <Link>Github : <a href={githubLink} target="_blank">{title} <br /></a> </Link>
             <Link>Open API : <a href={ainizeLink} target="_blank">On Ainize</a></Link>
             <Line/>
         </div>
